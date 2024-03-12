@@ -133,3 +133,47 @@ h2 {
 .about-content {
     max-width: 60rem;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 80rem;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    background-color: transparent; /* Background color of the navbar */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+    padding: 2rem; /* Adjust padding as needed */
+  }
+
+  .navbar.scrolled {
+    background-color: var(--main-color); /* Background color when scrolled */
+  }
+  
+  .navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+  }
+  
+  .navlist li {
+    margin-left: 2.5rem; /* Adjust spacing between list items */
+  }
+  
+  .navlist li a {
+    color: var(--text-color); /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: .3;
+  }
+  .navlist li a:visited {
+    color: var(--text-color); /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .navlist li a:hover {
+    color: var(--background-color); /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+  }

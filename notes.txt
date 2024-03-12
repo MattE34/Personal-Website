@@ -1,0 +1,3 @@
+PROJECTS
+- display project title as well as a button that says "details"
+- for projects I'm working on, use the "clapperboard" pic, show project title, and instead of button display "In Production" text
