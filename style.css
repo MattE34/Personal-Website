@@ -6,8 +6,16 @@
     font-family: 'Trade Gothic', sans-serif;
 }
 
+:root {
+    /* --bg-color: #fdfdfd; */
+    --background-color: #1b273d;
+    --text-color: white;
+    --main-color: #ffb443;
+
+}
+
 body {
-    background-color: #263b61;
+    background-color: var(--background-color);
 
   }
 
@@ -23,9 +31,13 @@ body {
 }
 
 .home-content h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 4rem;
     font-weight: 700;
     line-height: .2;
     margin-bottom: .5rem;
+}
+
+span {
+    color: var(--main-color);
 }
