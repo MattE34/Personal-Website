@@ -17,15 +17,33 @@
 
 body {
     background-color: var(--background-color);
+    margin: 0;
 
   }
+  
+#home {
+    padding-top: 150px; /* Adjust the value based on your navbar height */
+    margin: 0;
+} 
+
+#about {
+    padding-top: 80px; /* Adjust the value based on your navbar height */
+}
+
+#skills {
+    padding-top: 80px; /* Adjust the value based on your navbar height */
+}
+
+#projects {
+    padding-top: 80px; /* Adjust the value based on your navbar height */
+}
 
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 
 .home .home-content {
@@ -98,6 +116,7 @@ p {
     font-weight: 550;
     line-height: .3;
     text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .whoButton:visited {
@@ -137,28 +156,33 @@ h2 {
 .navbar {
     position: fixed;
     top: 0;
-    right: 0;
-    left: 80rem;
-    width: 100%;
+    left: 0; /* Adjust to start from the left edge of the screen */
+    width: 100vw; /* Take up the entire horizontal length of the screen */
     z-index: 1000; /* Ensure navbar stays on top of other content */
     background-color: transparent; /* Background color of the navbar */
-    transition: background-color 0.3s ease; /* Add a smooth transition */
-    padding: 2rem; /* Adjust padding as needed */
+    transition: 0.3s ease;
+    padding: 0.5rem; /* Adjust padding as needed */
+    display: flex; /* Use flexbox */
+    justify-content: space-between;
+    /* justify-content: space-between; Align items with space between */
+    align-items: center; /* Align items vertically */
   }
 
   .navbar.scrolled {
-    background-color: var(--main-color); /* Background color when scrolled */
+    background-color: var(--background-color); /* Background color when scrolled */
+    border-bottom: 0.5rem solid var(--main-color);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3); /* Shadow effect for the bottom border */
   }
   
   .navlist {
     list-style-type: none;
-    margin: 0;
+    margin-right: 10em;
     padding: 0;
-    display: flex; /* Use flexbox */
+    display: flex;
   }
   
   .navlist li {
-    margin-left: 2.5rem; /* Adjust spacing between list items */
+    margin-left: 3rem; /* Adjust spacing between list items */
   }
   
   .navlist li a {
@@ -168,12 +192,110 @@ h2 {
     font-weight: 550;
     line-height: .3;
   }
+
+  .navbar p {
+    color: var(--text-color); /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.4rem;
+    font-weight: 550;
+    line-height: .3;
+    /* justify-content:right; */
+    /* margin-right: 60rem; */
+    padding: 0;
+    margin-left: 3rem;
+  }
   .navlist li a:visited {
     color: var(--text-color); /* Text color of the links */
     text-decoration: none; /* Remove underline */
   }
 
   .navlist li a:hover {
-    color: var(--background-color); /* Text color of the links */
+    color: var(--main-color); /* Text color of the links */
     text-decoration: none; /* Remove underline */
   }
+
+  .about-content {
+    max-width: 100rem;
+    margin: 0; /* Center the content */
+    justify-content: space-between;
+    /* justify-content: space-between; Align items with space between */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .about-details {
+    /* display: flex; Use flexbox */
+    /* align-items: flex-start; Align items to the start */
+    /* display: flex; Use flexbox */
+    /* flex-direction: column; Arrange items vertically */
+    /* align-items: flex-start; Align items to the start */
+    margin-top: 8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start; /* Align items vertically */
+    border-right: 0.5rem solid var(--main-color);
+  }
+
+  .self-image img {
+    margin-right: 1rem; /* Add spacing between the image and activities */
+    width: 30rem;
+    border-radius: 10%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    /* border: 0.4rem solid var(--main-color); */
+  }
+  
+  .bio {
+    align-items: center; /* Aligns items vertically at the center */
+    margin-top: 3rem;
+  }
+
+  .activities-container {
+    width: 100%; /* Set a fixed width for the container */
+    overflow: hidden; /* Hide any content that overflows beyond the container */
+}
+
+  .activities {
+    display: flex;
+    justify-content: flex-start; /* Aligns items horizontally at the center */
+    align-items: center; /* Aligns items vertically at the center */
+    margin-bottom: 2rem;
+    height: 3.5rem;
+  }
+  
+  .activities i {
+    margin: 0; /* Remove default margin */
+    color: var(--text-color);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: .3;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+  }
+  .activities i:hover {
+    margin: 0; /* Remove default margin */
+    color: var(--text-color);
+    font-size: 3.7rem;
+    font-weight: 500;
+    line-height: .3;
+  }
+  
+  .about-details p {
+    font-size: 1.5rem;
+    font-weight: 550;
+    line-height: .3;
+    color: var(--text-color); /* Apply text color */
+  }
+
+  .bio p {
+    word-wrap: break-word;
+    line-height: 1.5;
+    margin: auto;
+  }
+
+  .description {
+    text-align: left;
+    font-size: .51rem;
+  }
+
+  
+  
+  
+
