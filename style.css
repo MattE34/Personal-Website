@@ -139,6 +139,7 @@ h2 {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: .3;
+    text-align: center;
 }
 
 .about {
@@ -272,7 +273,8 @@ h2 {
   .activities i:hover {
     margin: 0; /* Remove default margin */
     color: var(--text-color);
-    font-size: 3.7rem;
+    transform: scale(1.1); /* Scale the div on hover */
+    /* font-size: 3.7rem; */
     font-weight: 500;
     line-height: .3;
   }
@@ -295,6 +297,74 @@ h2 {
     font-size: .51rem;
   }
 
+  .skills {
+    margin-top: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-content {
+    max-width: 70rem;
+    margin: 0 auto; /* Center the content horizontally */
+  }
+
+  .techs {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center; /* Align items vertically at the center */
+    text-align: center; /* Align content within the container */
+  }
+
+.techs div {
+    font-size: 1.5rem;
+    font-weight: 550;
+    line-height: .3;
+    color: var(--text-color);
+    transition: all 0.3s;
+    margin: 1rem;
+    border: 0.5rem solid var(--main-color);
+    border-radius: 10%;
+    padding: 1rem;
+    width: 13rem;
+    height: 10rem;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align <i> and text vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Align text within the box */
+    margin: 2rem;
+    margin-bottom: 1rem;
+    transform-origin: center; /* Set the transform origin to the center */
+}
+
+.techs div i {
+    font-size: 4rem; /* Adjust the size of the <i> elements */
+    margin-bottom: 1.5rem; /* Add spacing between <i> and text */
+}
+
+.techs div:hover {
+    font-size: 1.7rem;
+    transform: scale(1.1); /* Scale the div on hover */
+    box-shadow: 0px 0px 15px var(--main-color);
+    text-shadow: 0px 0px 15px var(--main-color);
+
+}
+
+.techs div:hover i {
+    font-size: 4.5rem; /* Increase size of <i> elements */
+    margin-bottom: 1.2rem; /* Adjust spacing between <i> and text */
+}
+
+.projects {
+    margin-top: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
   
   
   
