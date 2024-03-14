@@ -1,114 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Trade Gothic font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Trade+Gothic:wght@400;700&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Trade+Gothic:wght@400;700&display=swap"
+    />
     <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar" id="navbar">
-          <p>Matthew Eng's Portfolio</p>
-          <ul class="navlist">
-            <!-- Sections of the Home Page -->
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-      <!-- Content for the Home Page -->
+      <nav class="navbar" id="navbar">
+        <p>Matthew Eng's Portfolio</p>
+        <ul class="navlist">
+          <!-- Sections of the Home Page -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Home Section -->
-      <section class="home" id="home">
-        <div class="home-content">
-          <h1><i class='bx bx-party'></i>  Hello,  <i class='bx bx-party'></i></h1>
-          <h1 class="bottom-h1">Welcome to my Website!</h1>
-          <p>Matthew Eng</p>
-          <p>CS & DS @ Rutgers University</p>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/matthew-eng-23017524b/" rel="noopener noreferrer" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/MattE34" rel="noopener noreferrer" target="_blank"><i class='bx bxl-github' ></i></a>
-            <a href="mailto:mattheweng.cs@gmail.com"><i class='bx bx-envelope' ></i></a>
-            <a href="#" id="resumeFile"><i class='bx bx-file'></i></a>   
-          </div>
-          <a href="#about" class="whoButton">WHO AM I?</a>
+    <!-- Content for the Home Page -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1><i class="bx bx-party"></i> Hello, <i class="bx bx-party"></i></h1>
+        <h1 class="bottom-h1">Welcome to my Website!</h1>
+        <p>Matthew Eng</p>
+        <p>CS & DS @ Rutgers University</p>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/matthew-eng-23017524b/"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/MattE34"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:mattheweng.cs@gmail.com"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="#" id="resumeFile"><i class="bx bx-file"></i></a>
         </div>
-      </section>
+        <a href="#about" class="whoButton">WHO AM I?</a>
+      </div>
+    </section>
 
-      <!-- About Me Section -->
-      <section class ="about" id="about">
-        <div class="about-content">
-          <h2>About Me</h2>
-          <div class="about-details">
-            <div class="self-image">
-              <img src="media/self.jpg" alt="portrait of myself">
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <div class="about-details">
+          <div class="self-image">
+            <img src="media/self.jpg" alt="portrait of myself" />
+          </div>
+          <div class="bio">
+            <div class="activities">
+              <p><i class="bx bx-basketball"></i></p>
+              <p><i class="bx bx-movie"></i></p>
+              <p><i class="bx bx-camera"></i></p>
+              <p><i class="bx bx-music"></i></p>
+              <p><i class="bx bx-laptop"></i></p>
+              <p><i class="bx bx-code-alt"></i></p>
             </div>
-            <div class="bio">
-              <div class="activities">
-                <p><i class='bx bx-basketball'></i></p>
-                <p><i class='bx bx-movie'></i></p>
-                <p><i class='bx bx-camera'></i></p>
-                <p><i class='bx bx-music'></i></p>
-                <p><i class='bx bx-laptop'></i></p>
-                <p><i class='bx bx-code-alt'></i></p>
-              </div>
-              <p class="description">My name is <span>Matthew Eng</span>. I'm a student pursuing a major in Computer Science and a minor in Data Science at Rutgers University.
-              I have experience with Java, Python, C, R, JavaScript, CSS, HTML, React, Firebase, and NodeJS. I also have real-world troubleshooting experience
-              through my part-time <span>Level 2 Specialist Consultant</span> position at the Rutgers Office of IT. I love to code creative projects
-              and continously expand my computer science knowledge through new skills, languages, and technologies. In my free time, I love to play drums, capture videos,
-              play video games, and repair/upgrade PC's. I also love to listen to music and watch shows/movies. I'm currently seeking internship experience related to
-              software engineering, website development, and data science.</p>
-            </div> 
+            <p class="description">
+              My name is <span>Matthew Eng</span>. I'm a student pursuing a
+              major in Computer Science and a minor in Data Science at Rutgers
+              University. I have experience with Java, Python, C, R, JavaScript,
+              CSS, HTML, React, Firebase, and NodeJS. I also have real-world
+              troubleshooting experience through my part-time
+              <span>Level 2 Specialist Consultant</span> position at the Rutgers
+              Office of IT. I love to code creative projects and continously
+              expand my computer science knowledge through new skills,
+              languages, and technologies. In my free time, I love to play
+              drums, capture videos, play video games, and repair/upgrade PC's.
+              I also love to listen to music and watch shows/movies. I'm
+              currently seeking internship experience related to software
+              engineering, website development, and data science.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Skills Section -->
-      <section class ="skills" id="skills">
-        <div class="skills-content">
-          <h2>Skills</h2>
-          <div class="techs">
-            <div><i class='bx bxl-java'></i>Java</div>
-            <div><i class='bx bxl-python' ></i>Python</div>
-            <div><i class='bx bx-code' ></i>C</div>
-            <div><i class='bx bx-code' ></i>R</div>
-            <div><i class='bx bxl-javascript' ></i>JavaScript</div>
-            <div><i class='bx bxl-html5'></i>HTML</div>
-            <div><i class='bx bxl-css3' ></i>CSS</div>
-            <div><i class='bx bxl-react' ></i>React</div>
-            <div><i class='bx bxl-firebase' ></i>Firebase</div>
-            <div><i class='bx bxl-nodejs' ></i>NodeJS</div>
-            <div><i class='bx bxl-git' ></i>Git</div>
-            <div><i class='bx bx-git-branch' ></i>Bitbucket</div>
-          </div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="skills-content">
+        <h2>Skills</h2>
+        <div class="techs">
+          <div><i class="bx bxl-java"></i>Java</div>
+          <div><i class="bx bxl-python"></i>Python</div>
+          <div><i class="bx bx-code"></i>C</div>
+          <div><i class="bx bx-code"></i>R</div>
+          <div><i class="bx bxl-javascript"></i>JavaScript</div>
+          <div><i class="bx bxl-html5"></i>HTML</div>
+          <div><i class="bx bxl-css3"></i>CSS</div>
+          <div><i class="bx bxl-react"></i>React</div>
+          <div><i class="bx bxl-firebase"></i>Firebase</div>
+          <div><i class="bx bxl-nodejs"></i>NodeJS</div>
+          <div><i class="bx bxl-git"></i>Git</div>
+          <div><i class="bx bx-git-branch"></i>Bitbucket</div>
         </div>
-      </section>
-    
-      <!-- Projects Section -->
-      <section class ="projects" id="projects">
-        <div class="projects-content">
-          <h2>Projects</h2>
-          <div class="products">
-            <div><img src="media/photos.jpg" alt="A hand holding mobile device"><p>Photos Organizer</p><a href="photos.html" class="prodButton">DETAILS</a></div>
-            <div><img src="media/chess.jpg" alt="A chess board"><p>Chess Simulator</p><a href="chess.html" class="prodButton">DETAILS</a></div>
-            <div><img src="media/portfolio.png" alt="A photo of Matt's portfolio website"><p>Portfolio Website</p><a href="portfolio.html" class="prodButton">DETAILS</a></div>
-            <div><img src="media/clapperboard.png" alt="A clapperboard"><p>Filminator</p><p>IN PRODUCTION</p></div>
-            <div><img src="media/clapperboard.png" alt="A clapperboard"><p>Comic Book Notifier</p><p>IN PRODUCTION</p></div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- JavaScript file -->
-      <script src="script.js"></script>
-</body>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h2>Projects</h2>
+        <div class="products">
+          <div>
+            <img src="media/photos.jpg" alt="A hand holding mobile device" />
+            <p>Photos Organizer</p>
+            <a href="photos.html" class="prodButton">DETAILS</a>
+          </div>
+          <div>
+            <img src="media/chess.jpg" alt="A chess board" />
+            <p>Chess Simulator</p>
+            <a href="chess.html" class="prodButton">DETAILS</a>
+          </div>
+          <div>
+            <img
+              src="media/portfolio.png"
+              alt="A photo of Matt's portfolio website"
+            />
+            <p>Portfolio Website</p>
+            <a href="portfolio.html" class="prodButton">DETAILS</a>
+          </div>
+          <div>
+            <img src="media/clapperboard.png" alt="A clapperboard" />
+            <p>Filminator</p>
+            <p>IN PRODUCTION</p>
+          </div>
+          <div>
+            <img src="media/clapperboard.png" alt="A clapperboard" />
+            <p>Comic Book Notifier</p>
+            <p>IN PRODUCTION</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,361 +1,358 @@
 * {
-    margin: .5;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Trade Gothic', sans-serif;
+  margin: 0.5;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Trade Gothic", sans-serif;
 }
 
 :root {
-    /* --bg-color: #fdfdfd; */
-    --background-color: #1b273d;
-    /* --text-color: white; */
-    --text-color: rgb(231, 226, 216);
-    --main-color: #ffb443;
-
+  /* --bg-color: #fdfdfd; */
+  --background-color: #1b273d;
+  /* --text-color: white; */
+  --text-color: rgb(231, 226, 216);
+  --main-color: #ffb443;
 }
 
 body {
-    background-color: var(--background-color);
-    margin: 0;
+  background-color: var(--background-color);
+  margin: 0;
+}
 
-  }
-  
 #home {
-    padding-top: 150px; /* Adjust the value based on your navbar height */
-    margin: 0;
-} 
+  padding-top: 150px; /* Adjust the value based on your navbar height */
+  margin: 0;
+}
 
 #about {
-    padding-top: 80px; /* Adjust the value based on your navbar height */
+  padding-top: 80px; /* Adjust the value based on your navbar height */
 }
 
 #skills {
-    padding-top: 80px; /* Adjust the value based on your navbar height */
+  padding-top: 80px; /* Adjust the value based on your navbar height */
 }
 
 #projects {
-    padding-top: 80px; /* Adjust the value based on your navbar height */
+  padding-top: 80px; /* Adjust the value based on your navbar height */
 }
 
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* margin-top: 10rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 10rem; */
 }
 
 .home .home-content {
-    max-width: 50rem;
+  max-width: 50rem;
 }
 
 .home-content h1 {
-    color: var(--text-color);
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 0.5rem;
-    /* word-wrap: break-word; */
-    /* For modern browser support */
-    /* overflow-wrap: break-word;
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 0.5rem;
+  /* word-wrap: break-word; */
+  /* For modern browser support */
+  /* overflow-wrap: break-word;
     text-align: center; */
 }
 
-.home-content .bottom-h1{
-    margin-bottom: 4rem;
-    line-height: 1rem;
-    word-wrap: break-word;
-    /* For modern browser support */
-    overflow-wrap: break-word;
-    text-align: center;
+.home-content .bottom-h1 {
+  margin-bottom: 4rem;
+  line-height: 1rem;
+  word-wrap: break-word;
+  /* For modern browser support */
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 .home-content p {
-    font-size: 1.5rem;
-    font-weight: 550;
-    line-height: .3;
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 0.3;
 }
 
 /* use to change color of keywords to orange */
 /* ex: <p>My name is <span>Matthew Eng</span></p> */
 span {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 p {
-    color:var(--text-color)
+  color: var(--text-color);
 }
 
 .home-content .socials {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-    /* color: var(--main-color); */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  /* color: var(--main-color); */
 }
 
 .home-content .socials a {
-    color: var(--main-color);
-    padding: 0.5rem;
-    border-radius: 35%;
-    border: solid var(--main-color);
-    background-color: transparent;
-
+  color: var(--main-color);
+  padding: 0.5rem;
+  border-radius: 35%;
+  border: solid var(--main-color);
+  background-color: transparent;
 }
 
 .home-content .socials a:visited {
-    color: var(--main-color);
-    border: solid var(--main-color);
-    background-color: transparent;
+  color: var(--main-color);
+  border: solid var(--main-color);
+  background-color: transparent;
 }
 
 .home-content .socials a:hover {
-    color: var(--text-color);
-    background-color: var(--main-color);
-    border: solid var(--main-color);
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: solid var(--main-color);
 }
 
 .whoButton {
-    margin-top: 2rem;
-    border-radius: 5%;
-    padding: 0.5rem;
-    height: 3rem;
-    color: var(--text-color);
-    background-color: var(--main-color);
-    border: solid var(--main-color);
-    font-size: 1.5rem;
-    font-weight: 550;
-    line-height: .3;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: solid var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 0.3;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .whoButton:visited {
-    color: var(--text-color);
-    background-color: var(--main-color);
-    border: solid var(--main-color);
-    text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: solid var(--main-color);
+  text-decoration: none;
 }
 
 .whoButton:hover {
-    height: 3.1rem;
-    font-size: 1.6rem;
-    font-weight: 550;
-    line-height: .3;
+  height: 3.1rem;
+  font-size: 1.6rem;
+  font-weight: 550;
+  line-height: 0.3;
 }
 
 h2 {
-    color: var(--main-color);
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: .3;
-    text-align: center;
+  color: var(--main-color);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 0.3;
+  text-align: center;
 }
 
 .about {
-    margin-top: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .about-content {
-    max-width: 60rem;
+  max-width: 60rem;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0; /* Adjust to start from the left edge of the screen */
-    width: 100vw; /* Take up the entire horizontal length of the screen */
-    z-index: 1000; /* Ensure navbar stays on top of other content */
-    background-color: transparent; /* Background color of the navbar */
-    transition: 0.3s ease;
-    padding: 0.5rem; /* Adjust padding as needed */
-    display: flex; /* Use flexbox */
-    justify-content: space-between;
-    /* justify-content: space-between; Align items with space between */
-    align-items: center; /* Align items vertically */
-  }
+  position: fixed;
+  top: 0;
+  left: 0; /* Adjust to start from the left edge of the screen */
+  width: 100vw; /* Take up the entire horizontal length of the screen */
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+  background-color: transparent; /* Background color of the navbar */
+  transition: 0.3s ease;
+  padding: 0.5rem; /* Adjust padding as needed */
+  display: flex; /* Use flexbox */
+  justify-content: space-between;
+  /* justify-content: space-between; Align items with space between */
+  align-items: center; /* Align items vertically */
+}
 
-  .navbar.scrolled {
-    background-color: var(--background-color); /* Background color when scrolled */
-    border-bottom: 0.5rem solid var(--main-color);
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3); /* Shadow effect for the bottom border */
-  }
-  
-  .navlist {
-    list-style-type: none;
-    margin-right: 10em;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navlist li {
-    margin-left: 3rem; /* Adjust spacing between list items */
-  }
-  
-  .navlist li a {
-    color: var(--text-color); /* Text color of the links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2rem;
-    font-weight: 550;
-    line-height: .3;
-  }
+.navbar.scrolled {
+  background-color: var(
+    --background-color
+  ); /* Background color when scrolled */
+  border-bottom: 0.5rem solid var(--main-color);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3); /* Shadow effect for the bottom border */
+}
 
-  .navbar p {
-    color: var(--text-color); /* Text color of the links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.4rem;
-    font-weight: 550;
-    line-height: 1.2;
-    /* justify-content:right; */
-    /* margin-right: 60rem; */
-    padding: 0;
-    margin-left: 3rem;
-    word-wrap: break-word;
-    /* For modern browser support */
-    overflow-wrap: break-word;
-    text-align: center;
-  }
-  .navlist li a:visited {
-    color: var(--text-color); /* Text color of the links */
-    text-decoration: none; /* Remove underline */
-  }
+.navlist {
+  list-style-type: none;
+  margin-right: 10em;
+  padding: 0;
+  display: flex;
+}
 
-  .navlist li a:hover {
-    color: var(--main-color); /* Text color of the links */
-    text-decoration: none; /* Remove underline */
-  }
+.navlist li {
+  margin-left: 3rem; /* Adjust spacing between list items */
+}
 
-  .about-content {
-    max-width: 100rem;
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0 5rem; /* Add padding to the sides */
-  }
-  
-  .about-details {
-    display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap */
-    align-items: flex-start; /* Align items to the start */
-    margin-top: 8rem;
-    /* border-right: 0.5rem solid var(--main-color); */
-  }
-  
-  .self-image {
-    flex: 0 0 30rem; /* Set a fixed width for the image */
-    margin: 1rem;
-  }
-  
-  .self-image img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    border-radius: 10%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
-  }
-  
-  .bio {
-    border-right: 0.5rem solid var(--main-color);
-    flex: 1; /* Allow the bio content to grow */
-    margin-top: 1rem;
-    margin-left: 1rem; /* Add space between the image and the bio content */
-  }
-  
-  .activities {
-    display: flex;
-    flex-wrap: wrap; /* Allow activities to wrap */
-    margin-bottom: 0.5rem;
-    justify-content: space-around;
-  }
-  
-  .activities i {
-    margin: 0 1rem 1rem 0; /* Adjust margin for individual icons */
-    color: var(--text-color);
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: .3;
-    transition: all 0.3s; /* Add transition for smooth hover effect */
-  }
-  
-  .activities i:hover {
-    transform: scale(1.1); /* Scale the icon on hover */
-  }
-  
-  .description {
-    font-size: 1.5rem; /* Adjust font size */
-    line-height: 1.5;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: left;
-    margin-top: 0.5rem;
-  }
-  
+.navlist li a {
+  color: var(--text-color); /* Text color of the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 0.3;
+}
 
-  .skills {
-    margin-top: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.navbar p {
+  color: var(--text-color); /* Text color of the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.4rem;
+  font-weight: 550;
+  line-height: 1.2;
+  /* justify-content:right; */
+  /* margin-right: 60rem; */
+  padding: 0;
+  margin-left: 3rem;
+  word-wrap: break-word;
+  /* For modern browser support */
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.navlist li a:visited {
+  color: var(--text-color); /* Text color of the links */
+  text-decoration: none; /* Remove underline */
+}
+
+.navlist li a:hover {
+  color: var(--main-color); /* Text color of the links */
+  text-decoration: none; /* Remove underline */
+}
+
+.about-content {
+  max-width: 100rem;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 5rem; /* Add padding to the sides */
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  align-items: flex-start; /* Align items to the start */
+  margin-top: 5rem;
+  /* border-right: 0.5rem solid var(--main-color); */
+}
+
+.self-image {
+  flex: 0 0 30rem; /* Set a fixed width for the image */
+  margin: 1rem;
+}
+
+.self-image img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  border-radius: 10%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.bio {
+  border-right: 0.5rem solid var(--main-color);
+  flex: 1; /* Allow the bio content to grow */
+  margin-top: 1rem;
+  margin-left: 1rem; /* Add space between the image and the bio content */
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap; /* Allow activities to wrap */
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
+}
+
+.activities i {
+  margin: 0 1rem 1rem 0; /* Adjust margin for individual icons */
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 0.3;
+  transition: all 0.3s; /* Add transition for smooth hover effect */
+}
+
+.activities i:hover {
+  transform: scale(1.1); /* Scale the icon on hover */
+}
+
+.description {
+  font-size: 1.5rem; /* Adjust font size */
+  line-height: 1.5;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.skills {
+  margin-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .skills-content {
-    max-width: 70rem;
-    margin: 0 auto; /* Center the content horizontally */
-  }
+  max-width: 70rem;
+  margin: 0 auto; /* Center the content horizontally */
+}
 
-  .techs {
-    display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-    justify-content: center; /* Align items horizontally at the center */
-    align-items: center; /* Align items vertically at the center */
-    text-align: center; /* Align content within the container */
-  }
+.techs {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center; /* Align items horizontally at the center */
+  align-items: center; /* Align items vertically at the center */
+  text-align: center; /* Align content within the container */
+}
 
 .techs div {
-    font-size: 1.5rem;
-    font-weight: 550;
-    line-height: .3;
-    color: var(--text-color);
-    transition: all 0.3s;
-    border: 0.5rem solid var(--main-color);
-    border-radius: 10%;
-    padding: 1rem;
-    width: 13rem;
-    height: 10rem;
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Align <i> and text vertically */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Align text within the box */
-    margin: 2rem;
-    margin-bottom: 1rem;
-    transform-origin: center; /* Set the transform origin to the center */
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 0.3;
+  color: var(--text-color);
+  transition: all 0.3s;
+  border: 0.5rem solid var(--main-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 13rem;
+  height: 10rem;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Align <i> and text vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Align text within the box */
+  margin: 2rem;
+  margin-bottom: 1rem;
+  transform-origin: center; /* Set the transform origin to the center */
 }
 
 .techs div i {
-    font-size: 4rem; /* Adjust the size of the <i> elements */
-    margin-bottom: 1.5rem; /* Add spacing between <i> and text */
+  font-size: 4rem; /* Adjust the size of the <i> elements */
+  margin-bottom: 1.5rem; /* Add spacing between <i> and text */
 }
 
 .techs div:hover {
-    font-size: 1.7rem;
-    transform: scale(1.1); /* Scale the div on hover */
-    box-shadow: 0px 0px 15px var(--main-color);
-    text-shadow: 0px 0px 15px var(--main-color);
-
+  font-size: 1.7rem;
+  transform: scale(1.1); /* Scale the div on hover */
+  box-shadow: 0px 0px 15px var(--main-color);
+  text-shadow: 0px 0px 15px var(--main-color);
 }
 
 .techs div:hover i {
-    font-size: 4.5rem; /* Increase size of <i> elements */
-    margin-bottom: 1.2rem; /* Adjust spacing between <i> and text */
+  font-size: 4.5rem; /* Increase size of <i> elements */
+  margin-bottom: 1.2rem; /* Adjust spacing between <i> and text */
 }
 
 .projects {
-    margin-top: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  margin-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .projects-content {
@@ -370,7 +367,12 @@ h2 {
   justify-content: center; /* Align items horizontally at the center */
   align-items: center; /* Align items vertically at the center */
   text-align: center; /* Align content within the container */
-  background: linear-gradient(to bottom, rgba(231, 226, 216, 0) 0%, rgba(231, 226, 216, 0.03) 30%, rgba(231, 226, 216, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(231, 226, 216, 0) 0%,
+    rgba(231, 226, 216, 0.03) 30%,
+    rgba(231, 226, 216, 0) 100%
+  );
   /* z-index: -1; */
   border-radius: 3%;
   padding: 1rem;
@@ -380,11 +382,11 @@ h2 {
   position: relative; /* Ensure positioning context for child elements */
   font-size: 2rem;
   font-weight: 550;
-  line-height: .3;
+  line-height: 0.3;
   color: var(--text-color);
   transition: all 0.3s;
-  border-radius: 10%;
-  border: 0.50rem solid var(--main-color);
+  border-radius: 2rem;
+  border: 0.5rem solid var(--main-color);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   padding: 1rem;
   width: 28rem;
@@ -431,7 +433,7 @@ h2 {
   width: 100%; /* Ensure the image takes up the full width of its container */
   height: 100%; /* Ensure the image takes up the full height of its container */
   object-fit: cover; /* Maintain aspect ratio while covering the container */
-   /* Apply border radius to match the container */
+  /* Apply border radius to match the container */
   z-index: -1; /* Ensure the image is behind the content */
 }
 
@@ -476,8 +478,24 @@ h2 {
   background-color: var(--background-color);
   border: solid var(--background-color);
 }
-  
+
 .chess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 10rem; */
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 10rem; */
+}
+
+.photos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,19 +505,20 @@ h2 {
 
 .heading {
   position: relative;
-  height: 25rem; /* Set the height to cover the desired vertical distance */
+  height: 19rem; /* Set the height to cover the desired vertical distance */
   top: 6rem;
   left: 0; /* Adjust to start from the left edge of the screen */
   width: 100vw; /* Take up the entire horizontal length of the screen */
-  background-color: transparent; /* Background color of the navbar */
+  background-color: #ffb443b0;
   transition: 0.3s ease;
-  padding: 0.5rem; /* Adjust padding as needed */
+  padding: 1rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
   justify-content: space-between;
   /* justify-content: space-between; Align items with space between */
   align-items: center; /* Align items vertically */
   /* border-bottom: 0.5rem solid var(--main-color); */
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .heading img {
@@ -510,6 +529,110 @@ h2 {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  /* opacity: 0.5; */
+}
+
+.heading h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  color: var(--text-color);
+  /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
+  text-shadow: 0px 0px 15px #1b273de7;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.resources {
+  position: relative;
+  height: 3rem; /* Set the height to cover the desired vertical distance */
+  top: 7rem;
+  left: 50%; /* Adjust to start from the center of the screen */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 30vw; /* Take up the entire horizontal length of the screen */
+  background-color: var(--text-color);
+  transition: 0.3s ease;
+  padding: 0.5rem; /* Adjust padding as needed */
+  display: flex; /* Use flexbox */
+  justify-content: space-evenly;
+  /* justify-content: space-between; Align items with space between */
+  align-items: center; /* Align items vertically */
+  /* border-bottom: 0.5rem solid var(--main-color); */
+  box-shadow: 0px 0px 10px #000000ad;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.resources p {
+  color: var(--background-color);
+  font-size: 1.25rem;
+  font-weight: 550;
+}
+
+.prod_desc {
+  position: relative;
+  height: 20rem; /* Set the height to cover the desired vertical distance */
+  top: 8rem;
+  left: 50%; /* Adjust to start from the center of the screen */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 65vw; /* Take up the entire horizontal length of the screen */
+  background-color: rgba(231, 226, 216, 0.025);
+  transition: 0.3s ease;
+  padding: 1rem; /* Adjust padding as needed */
+  display: flex; /* Use flexbox */
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; /* Align items vertically */
+  /* border-bottom: 0.5rem solid var(--main-color); */
+  box-shadow: 0px 0px 10px #0000003a;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.prod_desc p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 2rem;
+  margin-bottom: rem;
+  margin-top: 0.25rem;
+  align-items: center;
+}
+
+.source {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: solid var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50rem; /* Adjust distance from the bottom of the prod_desc */
+  left: 50%; /* Position the link at the center horizontally */
+  transform: translateX(-50%); /* Center the link horizontally */
+}
+
+.source:visited {
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: solid var(--main-color);
+  text-decoration: none;
+}
+
+.source:hover {
+  height: 3.1rem;
+  font-size: 1.6rem;
+  font-weight: 550;
+  line-height: 1.5rem;
 }
 
 .navbar2 {
@@ -544,8 +667,6 @@ h2 {
   overflow-wrap: break-word;
   text-align: center;
 }
-
-
 
 /* RESIZING */
 

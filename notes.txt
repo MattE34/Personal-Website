@@ -1,6 +1,0 @@
-PROJECTS
-- display project title as well as a button that says "details"
-- for projects I'm working on, use the "clapperboard" pic, show project title, and instead of button display "In Production" text
-
-RESIZING
-- at 905 (not sure of units), change layout to mobile version
