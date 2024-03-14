@@ -1,5 +1,5 @@
 * {
-  margin: 0.5;
+  /* margin: 0.5px; */
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -9,7 +9,7 @@
 :root {
   /* --bg-color: #fdfdfd; */
   --background-color: #1b273d;
-  /* --text-color: white; */
+  /* --text-color: white; */ 
   --text-color: rgb(231, 226, 216);
   --main-color: #ffb443;
 }
@@ -670,7 +670,7 @@ h2 {
 
 /* RESIZING */
 
-@media (max-width: 1450px) {
+@media (max-width: 1650px) {
   html {
     font-size: 90%;
   }
@@ -682,14 +682,26 @@ h2 {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1450px) {
   html {
-    font-size: 80%;
+    font-size: 85%;
   }
   .self-image {
     /* flex: 0 0 5rem; */
     /* Ensure the image takes up the full width */
-    width: 85%;
+    width: 90%;
+    /* Reset margin to maintain spacing */
+  }
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 75%;
+  }
+  .self-image {
+    /* flex: 0 0 5rem; */
+    /* Ensure the image takes up the full width */
+    width: 80%;
     /* Reset margin to maintain spacing */
   }
 }
