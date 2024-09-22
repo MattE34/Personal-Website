@@ -503,6 +503,14 @@ h2 {
   /* margin-top: 10rem; */
 }
 
+.cities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 10rem; */
+}
+
 .heading {
   position: relative;
   height: 19rem; /* Set the height to cover the desired vertical distance */
