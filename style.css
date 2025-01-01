@@ -237,13 +237,13 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Allow flex items to wrap */
   align-items: flex-start; /* Align items to the start */
-  margin-top: 5rem;
+  margin-top: 0rem;
   /* border-right: 0.5rem solid var(--main-color); */
 }
 
 .self-image {
-  flex: 0 0 30rem; /* Set a fixed width for the image */
-  margin: 1rem;
+  flex: 0 0 28rem; /* Set a fixed width for the image */
+  margin: 0.5rem;
 }
 
 .self-image img {
@@ -262,14 +262,14 @@ h2 {
 .activities {
   display: flex;
   flex-wrap: wrap; /* Allow activities to wrap */
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   justify-content: space-around;
 }
 
 .activities i {
   margin: 0 1rem 1rem 0; /* Adjust margin for individual icons */
   color: var(--text-color);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 0.3;
   transition: all 0.3s; /* Add transition for smooth hover effect */
@@ -282,10 +282,25 @@ h2 {
 .description {
   font-size: 1.5rem; /* Adjust font size */
   line-height: 1.5;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-align: left;
   margin-top: 0.5rem;
+}
+
+.description p {
+  font-size: 1.24rem; /* Adjust font size */
+  font-weight: 750;
+  line-height: 1.5;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  /* align-items: left; */
+
+  /* margin-bottom: rem;
+  margin-top: 0.25rem;
+  align-items: center; */
 }
 
 .skills {
@@ -297,7 +312,7 @@ h2 {
 }
 
 .skills-content {
-  max-width: 70rem;
+  max-width: 60rem;
   margin: 0 auto; /* Center the content horizontally */
 }
 
@@ -314,18 +329,18 @@ h2 {
   font-weight: 550;
   line-height: 0.3;
   color: var(--text-color);
-  transition: all 0.3s;
+  transition: all 0.1s;
   border: 0.5rem solid var(--main-color);
-  border-radius: 2rem;
+  border-radius: 1.7rem;
   padding: 1rem;
-  width: 13rem;
-  height: 10rem;
+  width: 11rem;
+  height: 9rem;
   display: flex; /* Use flexbox */
   flex-direction: column; /* Align <i> and text vertically */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   text-align: center; /* Align text within the box */
-  margin: 2rem;
+  margin: 1rem;
   margin-bottom: 1rem;
   transform-origin: center; /* Set the transform origin to the center */
 }
@@ -348,7 +363,7 @@ h2 {
 }
 
 .projects {
-  margin-top: 30rem;
+  margin-top: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,8 +404,8 @@ h2 {
   border: 0.5rem solid var(--main-color);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   padding: 1rem;
-  width: 28rem;
-  height: 16rem;
+  width: 26rem;
+  height: 14rem;
   display: flex; /* Use flexbox */
   flex-direction: column; /* Align <i> and text vertically */
   justify-content: center; /* Center horizontally */
@@ -513,7 +528,7 @@ h2 {
 
 .heading {
   position: relative;
-  height: 19rem; /* Set the height to cover the desired vertical distance */
+  height: 12rem; /* Set the height to cover the desired vertical distance */
   top: 6rem;
   left: 0; /* Adjust to start from the left edge of the screen */
   width: 100vw; /* Take up the entire horizontal length of the screen */
@@ -541,7 +556,7 @@ h2 {
 }
 
 .heading h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 800;
   color: var(--text-color);
   /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
@@ -569,6 +584,7 @@ h2 {
   box-shadow: 0px 0px 10px #000000ad;
   text-align: center;
   border-radius: 1rem;
+  margin: 0;
 }
 
 .resources p {
@@ -579,14 +595,14 @@ h2 {
 
 .prod_desc {
   position: relative;
-  height: 20rem; /* Set the height to cover the desired vertical distance */
+  height: 17rem; /* Set the height to cover the desired vertical distance */
   top: 8rem;
   left: 50%; /* Adjust to start from the center of the screen */
   transform: translateX(-50%); /* Center horizontally */
   width: 65vw; /* Take up the entire horizontal length of the screen */
   background-color: rgba(231, 226, 216, 0.025);
   transition: 0.3s ease;
-  padding: 1rem; /* Adjust padding as needed */
+  padding: 0rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
   justify-content: center;
   flex-wrap: wrap;
@@ -595,21 +611,19 @@ h2 {
   box-shadow: 0px 0px 10px #0000003a;
   text-align: center;
   border-radius: 1rem;
-  margin-bottom: 5rem;
+  margin: 0rem;
 }
 
 .prod_desc p {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 550;
   line-height: 2rem;
-  margin-bottom: rem;
-  margin-top: 0.25rem;
   align-items: center;
 }
 
 .source {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -624,7 +638,7 @@ h2 {
   text-decoration: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 50rem; /* Adjust distance from the bottom of the prod_desc */
+  top: 41rem; /* Adjust distance from the bottom of the prod_desc */
   left: 50%; /* Position the link at the center horizontally */
   transform: translateX(-50%); /* Center the link horizontally */
 }
