@@ -526,6 +526,29 @@ h2 {
   /* margin-top: 10rem; */
 }
 
+.crud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* margin-top: 10rem; */
+}
+
+.crud-content {
+  /* display: flex; */
+  /* flex-direction: column;  */
+  /* align-items: flex-start;  */
+}
+
+.links {
+  display: flex; /* Arrange child elements in a row */
+  justify-content: flex-start; /* Align links to the left */
+  gap: 20px; /* Add space between the links */
+  margin-top: 20px; /* Add spacing above the links */
+}
+
+
 .heading {
   position: relative;
   height: 12rem; /* Set the height to cover the desired vertical distance */
