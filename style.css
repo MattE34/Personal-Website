@@ -315,7 +315,7 @@ h2 {
 }
 
 .skills-content {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto; /* Center the content horizontally */
 }
 
@@ -330,14 +330,15 @@ h2 {
 .techs div {
   font-size: 1.5rem;
   font-weight: 550;
-  line-height: 0.3;
+  line-height: 20px;
+  flex-wrap: wrap;
   color: var(--text-color);
   transition: all 0.1s;
   border: 0.3rem solid var(--main-color);
   border-radius: 1.7rem;
   padding: 1rem;
-  width: 11rem;
-  height: 9rem;
+  width: 12rem;
+  height: 12rem;
   display: flex; /* Use flexbox */
   flex-direction: column; /* Align <i> and text vertically */
   justify-content: center; /* Center horizontally */
@@ -568,7 +569,7 @@ h2 {
   top: 6rem;
   left: 0; /* Adjust to start from the left edge of the screen */
   width: 100vw; /* Take up the entire horizontal length of the screen */
-  background-color: #ffb443b0;
+  background-color: #ffb443c8;
   transition: 0.3s ease;
   padding: 1rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
@@ -605,11 +606,11 @@ h2 {
 
 .resources {
   position: relative;
-  height: 3rem; /* Set the height to cover the desired vertical distance */
+  /* height: 3rem;  */
   top: 7rem;
   left: 50%; /* Adjust to start from the center of the screen */
   transform: translateX(-50%); /* Center horizontally */
-  width: 70vw; /* Take up the entire horizontal length of the screen */
+  width: 35vw; /* Take up the entire horizontal length of the screen */
   background-color: var(--text-color);
   transition: 0.3s ease;
   padding: 0.5rem; /* Adjust padding as needed */
@@ -622,24 +623,29 @@ h2 {
   text-align: center;
   border-radius: 1rem;
   margin: 0;
+  flex-wrap:wrap;
 }
 
 .resources p {
   color: var(--background-color);
   font-size: 1.25rem;
   font-weight: 550;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .prod_desc {
   position: relative;
-  height: 17rem; /* Set the height to cover the desired vertical distance */
+  /* height: 17rem; */
   top: 8rem;
   left: 50%; /* Adjust to start from the center of the screen */
   transform: translateX(-50%); /* Center horizontally */
   width: 60vw; /* Take up the entire horizontal length of the screen */
   background-color: rgba(231, 226, 216, 0.025);
   transition: 0.3s ease;
-  padding: 0rem; /* Adjust padding as needed */
+  padding: 0.5rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
   justify-content: center;
   align-items: flex-start;
