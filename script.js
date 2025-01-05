@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 ScrollReveal({
   reset: true,
   // setting distance >= '120px' causes a horizontal bar at the bottom of the page to appear
-  distance: "100px",
+  distance: "30px",
   duration: 1500,
   delay: 100,
   opacity: 0,

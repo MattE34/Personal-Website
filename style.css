@@ -20,7 +20,7 @@ body {
 }
 
 #home {
-  padding-top: 150px; /* Adjust the value based on your navbar height */
+  padding-top: 60px; /* Adjust the value based on your navbar height */
   margin: 0;
 }
 
@@ -41,11 +41,13 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   /* margin-top: 10rem; */
 }
 
 .home .home-content {
   max-width: 50rem;
+  flex-wrap: wrap;
 }
 
 .home-content h1 {
@@ -57,15 +59,18 @@ body {
   /* For modern browser support */
   /* overflow-wrap: break-word;
     text-align: center; */
+    margin-bottom: 0;
 }
 
 .home-content .bottom-h1 {
-  margin-bottom: 4rem;
-  line-height: 1rem;
+  /* margin-bottom: 4rem; */
+  line-height: 4rem;
   word-wrap: break-word;
   /* For modern browser support */
   overflow-wrap: break-word;
   text-align: center;
+  /* padding-bottom: 5rem; */
+  margin-top: 1rem;
 }
 
 .home-content p {
@@ -156,10 +161,6 @@ h2 {
   text-align: center;
 }
 
-.about-content {
-  max-width: 60rem;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -185,13 +186,13 @@ h2 {
 
 .navlist {
   list-style-type: none;
-  margin-right: 10em;
+  margin-right: 3em;
   padding: 0;
   display: flex;
 }
 
 .navlist li {
-  margin-left: 3rem; /* Adjust spacing between list items */
+  margin-left: 1rem; /* Adjust spacing between list items */
 }
 
 .navlist li a {
@@ -230,7 +231,7 @@ h2 {
 .about-content {
   max-width: 100rem;
   margin: 0 auto; /* Center the content horizontally */
-  padding: 0 5rem; /* Add padding to the sides */
+  padding: 0 2rem; /* Add padding to the sides */
 }
 
 .about-details {
@@ -247,13 +248,15 @@ h2 {
 }
 
 .self-image img {
-  width: 100%; /* Ensure the image takes up the full width of its container */
+  width: 100%;
   border-radius: 10%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+  /* box-shadow: 0px 0px 50px -10px var(--main-color); */
 }
 
 .bio {
-  border-right: 0.5rem solid var(--main-color);
+  border: 0.3rem solid var(--main-color);
+  border-radius: 1rem;
   flex: 1; /* Allow the bio content to grow */
   margin-top: 1rem;
   margin-left: 1rem; /* Add space between the image and the bio content */
@@ -272,7 +275,7 @@ h2 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 0.3;
-  transition: all 0.3s; /* Add transition for smooth hover effect */
+  transition: all 0.05s; /* Add transition for smooth hover effect */
 }
 
 .activities i:hover {
@@ -289,7 +292,7 @@ h2 {
 }
 
 .description p {
-  font-size: 1.24rem; /* Adjust font size */
+  font-size: 1.17rem; /* Adjust font size */
   font-weight: 750;
   line-height: 1.5;
   margin-left: 0.5rem;
@@ -330,7 +333,7 @@ h2 {
   line-height: 0.3;
   color: var(--text-color);
   transition: all 0.1s;
-  border: 0.5rem solid var(--main-color);
+  border: 0.3rem solid var(--main-color);
   border-radius: 1.7rem;
   padding: 1rem;
   width: 11rem;
@@ -385,9 +388,15 @@ h2 {
   background: linear-gradient(
     to bottom,
     rgba(231, 226, 216, 0) 0%,
-    rgba(231, 226, 216, 0.03) 30%,
+    rgba(231, 226, 216, 0.05) 30%,
     rgba(231, 226, 216, 0) 100%
   );
+  /* background: linear-gradient(
+    to bottom,
+    rgba(27, 39, 61 0) 0%,
+    rgba(27, 39, 61, 0.736) 30%,
+    rgba(27, 39, 61, 0) 100%
+  ); */
   /* z-index: -1; */
   border-radius: 3%;
   padding: 1rem;
@@ -401,7 +410,7 @@ h2 {
   color: var(--text-color);
   transition: all 0.3s;
   border-radius: 2rem;
-  border: 0.5rem solid var(--main-color);
+  border: 0.3rem solid var(--main-color);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   padding: 1rem;
   width: 26rem;
@@ -542,10 +551,14 @@ h2 {
 }
 
 .links {
-  display: flex; /* Arrange child elements in a row */
-  justify-content: flex-start; /* Align links to the left */
+  /* width: 100px; */
+  display: flex;
+  /* display: flex; Arrange child elements in a row */
+  justify-content:center;
   gap: 20px; /* Add space between the links */
-  margin-top: 20px; /* Add spacing above the links */
+  margin-top: 150px; /* Add spacing above the links */
+  /* margin-right: 50px; */
+  
 }
 
 
@@ -565,6 +578,7 @@ h2 {
   /* border-bottom: 0.5rem solid var(--main-color); */
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
 }
 
 .heading img {
@@ -573,13 +587,13 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   z-index: -1;
   /* opacity: 0.5; */
 }
 
 .heading h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--text-color);
   /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
@@ -595,7 +609,7 @@ h2 {
   top: 7rem;
   left: 50%; /* Adjust to start from the center of the screen */
   transform: translateX(-50%); /* Center horizontally */
-  width: 30vw; /* Take up the entire horizontal length of the screen */
+  width: 70vw; /* Take up the entire horizontal length of the screen */
   background-color: var(--text-color);
   transition: 0.3s ease;
   padding: 0.5rem; /* Adjust padding as needed */
@@ -622,12 +636,13 @@ h2 {
   top: 8rem;
   left: 50%; /* Adjust to start from the center of the screen */
   transform: translateX(-50%); /* Center horizontally */
-  width: 65vw; /* Take up the entire horizontal length of the screen */
+  width: 60vw; /* Take up the entire horizontal length of the screen */
   background-color: rgba(231, 226, 216, 0.025);
   transition: 0.3s ease;
   padding: 0rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   align-items: center; /* Align items vertically */
   /* border-bottom: 0.5rem solid var(--main-color); */
@@ -646,11 +661,11 @@ h2 {
 }
 
 .source {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5px;
   border-radius: 0.5rem;
   padding: 0.5rem;
   height: 3rem;
+  width: 6rem;
   align-items: center;
   color: var(--text-color);
   background-color: var(--main-color);
@@ -660,10 +675,10 @@ h2 {
   line-height: 1.5rem;
   text-decoration: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 41rem; /* Adjust distance from the bottom of the prod_desc */
-  left: 50%; /* Position the link at the center horizontally */
-  transform: translateX(-50%); /* Center the link horizontally */
+  /* position: absolute; */
+  /* top: 41rem; Adjust distance from the bottom of the prod_desc */
+  /* left: 50%; Position the link at the center horizontally */
+  /* transform: translateX(-50%); Center the link horizontally */
 }
 
 .source:visited {
@@ -674,10 +689,11 @@ h2 {
 }
 
 .source:hover {
-  height: 3.1rem;
+  /* height: 3.1rem; */
   font-size: 1.6rem;
   font-weight: 550;
   line-height: 1.5rem;
+  transform: scale(1.1);
 }
 
 .navbar2 {
@@ -686,7 +702,9 @@ h2 {
   left: 0; /* Adjust to start from the left edge of the screen */
   width: 100vw; /* Take up the entire horizontal length of the screen */
   z-index: 1000; /* Ensure navbar stays on top of other content */
-  background-color: transparent; /* Background color of the navbar */
+  background-color: var(
+    --background-color
+  ); 
   transition: 0.3s ease;
   padding: 0.5rem; /* Adjust padding as needed */
   display: flex; /* Use flexbox */
@@ -713,11 +731,23 @@ h2 {
   text-align: center;
 }
 
-/* RESIZING */
+/* -------------------------- RESIZING -------------------------- */
 
 @media (max-width: 1650px) {
   html {
-    font-size: 90%;
+    font-size: 100%;
+  }
+  .self-image {
+    /* flex: 0 0 5rem; */
+    /* Ensure the image takes up the full width */
+    width: 100%;
+    /* Reset margin to maintain spacing */
+  }
+}
+
+@media (max-width: 1450px) {
+  html {
+    font-size: 95%;
   }
   .self-image {
     /* flex: 0 0 5rem; */
@@ -727,9 +757,9 @@ h2 {
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1250px) {
   html {
-    font-size: 85%;
+    font-size: 90%;
   }
   .self-image {
     /* flex: 0 0 5rem; */
@@ -739,45 +769,53 @@ h2 {
   }
 }
 
-@media (max-width: 1250px) {
-  html {
-    font-size: 75%;
-  }
-  .self-image {
-    /* flex: 0 0 5rem; */
-    /* Ensure the image takes up the full width */
-    width: 80%;
-    /* Reset margin to maintain spacing */
-  }
-}
-
 @media (max-width: 1100px) {
   html {
-    font-size: 65%;
+    font-size: 85%;
   }
   .self-image {
     /* flex: 0 0 5rem; */
     /* Ensure the image takes up the full width */
-    width: 70%;
+    width: 85%;
     /* Reset margin to maintain spacing */
   }
 }
 
 @media (max-width: 950px) {
   html {
-    font-size: 50%;
+    font-size: 85%;
   }
+
+  .about-details {
+    flex-direction: column; /* Change the flex direction to column */
+    align-items: center; /* Center items horizontally */
+  }
+
   .self-image {
     /* flex: 0 0 5rem; */
     /* Ensure the image takes up the full width */
     width: 50%;
+    flex: 0 0 15rem;
+    margin: 1rem;
     /* Reset margin to maintain spacing */
+  }
+
+  .bio {
+    /* Ensure the bio takes up the full width */
+    width: 100%;
+    /* Reset margin to maintain spacing */
+    margin: 1rem 0; /* Add margin between image and bio */
+  }
+
+  .activities {
+    /* Adjust margin to center activities */
+    margin: 1rem auto;
   }
 }
 
 @media (max-width: 750px) {
   html {
-    font-size: 50%;
+    font-size: 85%;
   }
 
   .about-details {
@@ -807,9 +845,9 @@ h2 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   html {
-    font-size: 40%;
+    font-size: 80%;
   }
 
   .about-details {
@@ -820,7 +858,7 @@ h2 {
   .self-image {
     /* flex: 0 0 5rem; */
     /* Ensure the image takes up the full width */
-    width: 40%;
+    width: 50%;
     flex: 0 0 15rem;
     margin: 1rem;
     /* Reset margin to maintain spacing */
@@ -839,9 +877,9 @@ h2 {
   }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 400px) {
   html {
-    font-size: 30%;
+    font-size: 75%;
   }
 
   .about-details {
@@ -852,7 +890,7 @@ h2 {
   .self-image {
     /* flex: 0 0 5rem; */
     /* Ensure the image takes up the full width */
-    width: 30%;
+    width: 50%;
     flex: 0 0 15rem;
     margin: 1rem;
     /* Reset margin to maintain spacing */
