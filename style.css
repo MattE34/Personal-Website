@@ -189,11 +189,16 @@ h2 {
 
 .navlist li a {
   color: var(--text-color); /* Text color of the links */
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  padding-bottom: 0.3rem;
   font-size: 1.2rem;
   font-weight: 550;
   line-height: 0.3;
   margin-left: 0;
+}
+
+.active {
+  border-bottom: 0.2rem solid var(--main-color);
 }
 
 .navbar p {
@@ -511,7 +516,7 @@ h2 {
 .links {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 10px; 
   margin-top: 150px; 
   margin-bottom: 30px;
 }
