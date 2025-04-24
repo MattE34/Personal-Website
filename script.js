@@ -1,7 +1,7 @@
 let resume = document.getElementById("resumeFile");
 
 resume.addEventListener("click", function () {
-  window.open("media/Resume.pdf", "_blank");
+  window.open("media/Matthew_Eng_Resume.pdf", "_blank");
 });
 
 window.addEventListener("scroll", function () {
