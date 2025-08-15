@@ -4,6 +4,12 @@ resume.addEventListener("click", function () {
   window.open("media/Matthew_Eng_Resume.pdf", "_blank");
 });
 
+let resume2 = document.getElementById("resumeFile2");
+
+resume2.addEventListener("click", function () {
+  window.open("media/Matthew_Eng_Resume (Data).pdf", "_blank");
+});
+
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
   if (window.scrollY > 0) {
